@@ -12,9 +12,13 @@ void Insert(int x)
     struct Node* temp = (struct Node*)malloc(sizeof(struct Node));
     temp->data=x;
     temp->next;
-
+/* so if we the address of the first inserted element as 100 and then we can do like this set temp->next = head which contains the address of the created node before the second one
+and then we can procced to the next step*/
     temp->next = head;
-    head= temp;
+    
+  /* so if the list is empty only this will run and which says that head has the address of temp* we are dooing this just like in the case of int 
+  int i is the initialization and then we have i= adress of pointer with the &p => i =&p but this is any array so the temp just mean the adress here/ 
+    head= temp;      
 }
 
 void Print()
